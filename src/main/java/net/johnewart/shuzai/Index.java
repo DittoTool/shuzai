@@ -38,7 +38,7 @@ public class Index<T> implements Iterable<T> {
     }
 
     public List<T> asList() {
-        List<T> results = new LinkedList<>();
+        List<T> results = new ArrayList<>(index.size());
 
         for(T v : index) {
             results.add(v);
